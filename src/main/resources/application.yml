@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/sell
+    username: root
+    password: hadoop
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+server:
+  context: F:\06_workshop\0326\sell
+  servlet:
+    context-path: /sell
+
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+##  path: F:\06_workshop\0326\sell\log
+#  file: F:\06_workshop\0326\sell\log\sell.log
+#  level:
+#    com.readailib.sell.service.Test1: debug

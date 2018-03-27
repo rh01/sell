@@ -1,0 +1,633 @@
+Starting ProductServiceImplTest on DL with PID 14688 (started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1acaf3d: startup date [Tue Mar 27 08:17:55 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e81ef243] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1acaf3d: startup date [Tue Mar 27 08:17:55 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@1acaf3d: startup date [Tue Mar 27 08:17:55 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+
+
+Using generated security password: 521e2339-f45a-4cff-8f87-b900026085c4
+
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5df92089, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ccdc7aa, org.springframework.security.web.header.HeaderWriterFilter@79ad1774, org.springframework.security.web.csrf.CsrfFilter@1570cad0, org.springframework.security.web.authentication.logout.LogoutFilter@752973de, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d944fc0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@48cf8414, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@12f9f896, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1657b017, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d1c5cf2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f0c45f4, org.springframework.security.web.session.SessionManagementFilter@3df77dfa, org.springframework.security.web.access.ExceptionTranslationFilter@45d7495e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@26ffd2c0]
+Started ProductServiceImplTest in 12.371 seconds (JVM running for 15.681)
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.web.context.support.GenericWebApplicationContext@1acaf3d: startup date [Tue Mar 27 08:17:55 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting ProductServiceImplTest on DL with PID 12372 (started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1e4d3ce5: startup date [Tue Mar 27 08:21:47 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4a64acb0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1e4d3ce5: startup date [Tue Mar 27 08:21:47 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@1e4d3ce5: startup date [Tue Mar 27 08:21:47 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+
+
+Using generated security password: 3c1b94a1-52c7-4baa-b079-eba7f2ecc126
+
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@994544, org.springframework.security.web.context.SecurityContextPersistenceFilter@63187d63, org.springframework.security.web.header.HeaderWriterFilter@3dde5f38, org.springframework.security.web.csrf.CsrfFilter@cec590c, org.springframework.security.web.authentication.logout.LogoutFilter@f59da34, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d226f27, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1377b1a0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6736f40f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a536164, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4243341e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5df92089, org.springframework.security.web.session.SessionManagementFilter@64f3ca6, org.springframework.security.web.access.ExceptionTranslationFilter@5c33008f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1bb96449]
+Started ProductServiceImplTest in 11.069 seconds (JVM running for 13.569)
+Closing org.springframework.web.context.support.GenericWebApplicationContext@1e4d3ce5: startup date [Tue Mar 27 08:21:47 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting ProductServiceImplTest on DL with PID 3896 (started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1acaf3d: startup date [Tue Mar 27 08:22:55 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7c5c85a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1acaf3d: startup date [Tue Mar 27 08:22:55 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@1acaf3d: startup date [Tue Mar 27 08:22:55 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+
+
+Using generated security password: ea288fbe-a63f-4f7a-8364-97a4a3f400b4
+
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a899811, org.springframework.security.web.context.SecurityContextPersistenceFilter@27dbaa33, org.springframework.security.web.header.HeaderWriterFilter@4243341e, org.springframework.security.web.csrf.CsrfFilter@579846cc, org.springframework.security.web.authentication.logout.LogoutFilter@6d17914a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1b475663, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@60fc7f43, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@36d697ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b021664, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6903ed0e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a51ae7c, org.springframework.security.web.session.SessionManagementFilter@7e0986c9, org.springframework.security.web.access.ExceptionTranslationFilter@7996d0d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2af9a5ef]
+Started ProductServiceImplTest in 10.735 seconds (JVM running for 13.136)
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.web.context.support.GenericWebApplicationContext@1acaf3d: startup date [Tue Mar 27 08:22:55 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting ProductServiceImplTest on DL with PID 3524 (started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1e4d3ce5: startup date [Tue Mar 27 08:25:19 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ced5068c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1e4d3ce5: startup date [Tue Mar 27 08:25:19 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@1e4d3ce5: startup date [Tue Mar 27 08:25:19 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+
+
+Using generated security password: 6a663ccf-c6b8-4912-8ef4-3e84920bb711
+
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@699e0bf0, org.springframework.security.web.context.SecurityContextPersistenceFilter@300bb303, org.springframework.security.web.header.HeaderWriterFilter@44864536, org.springframework.security.web.csrf.CsrfFilter@6f3b13d0, org.springframework.security.web.authentication.logout.LogoutFilter@16ea0f22, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@505f45cc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@67c21bf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1669931a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d1c5cf2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52a67293, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2499b971, org.springframework.security.web.session.SessionManagementFilter@6e239337, org.springframework.security.web.access.ExceptionTranslationFilter@1a536164, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@30cafd13]
+Started ProductServiceImplTest in 11.13 seconds (JVM running for 13.769)
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.web.context.support.GenericWebApplicationContext@1e4d3ce5: startup date [Tue Mar 27 08:25:19 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting ProductServiceImplTest on DL with PID 11088 (started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1e81f160: startup date [Tue Mar 27 08:25:41 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3de14ad3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1e81f160: startup date [Tue Mar 27 08:25:41 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@1e81f160: startup date [Tue Mar 27 08:25:41 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+
+
+Using generated security password: 87050568-2430-4755-b75c-756275ee6de6
+
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e2cdc51, org.springframework.security.web.context.SecurityContextPersistenceFilter@752973de, org.springframework.security.web.header.HeaderWriterFilter@48cf8414, org.springframework.security.web.csrf.CsrfFilter@5c33008f, org.springframework.security.web.authentication.logout.LogoutFilter@30ffb2a6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3335afcf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@77c23d90, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5a899811, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@793cef95, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16e195cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2969a9a6, org.springframework.security.web.session.SessionManagementFilter@15d65fcf, org.springframework.security.web.access.ExceptionTranslationFilter@d1c5cf2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7548e1fb]
+Started ProductServiceImplTest in 11.432 seconds (JVM running for 14.385)
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.web.context.support.GenericWebApplicationContext@1e81f160: startup date [Tue Mar 27 08:25:41 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting ProductServiceImplTest on DL with PID 10068 (started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@33aa93c: startup date [Tue Mar 27 09:12:57 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9a7edc82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@33aa93c: startup date [Tue Mar 27 09:12:57 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@33aa93c: startup date [Tue Mar 27 09:12:57 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+
+
+Using generated security password: af74e46c-0296-4359-b182-251525c45894
+
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52fec840, org.springframework.security.web.context.SecurityContextPersistenceFilter@38363e96, org.springframework.security.web.header.HeaderWriterFilter@53d2b827, org.springframework.security.web.csrf.CsrfFilter@5c1687d1, org.springframework.security.web.authentication.logout.LogoutFilter@240df292, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@698e1bf5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@43549c6c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@66d69cd2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@558aa1f1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49cd08f9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fd4b9ec, org.springframework.security.web.session.SessionManagementFilter@4504a4ed, org.springframework.security.web.access.ExceptionTranslationFilter@4468c0ea, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7676b2b9]
+Started ProductServiceImplTest in 14.544 seconds (JVM running for 17.872)
+HHH000397: Using ASTQueryTranslatorFactory
+Starting ProductServiceImplTest on DL with PID 14712 (started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4b629f13: startup date [Tue Mar 27 09:15:51 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$47304ac2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4b629f13: startup date [Tue Mar 27 09:15:51 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@4b629f13: startup date [Tue Mar 27 09:15:51 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+
+
+Using generated security password: 41f2c86a-cd35-47ba-aabb-33aff309550a
+
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3340ff7c, org.springframework.security.web.context.SecurityContextPersistenceFilter@1bbc1b90, org.springframework.security.web.header.HeaderWriterFilter@314c6f89, org.springframework.security.web.csrf.CsrfFilter@61e0f9b9, org.springframework.security.web.authentication.logout.LogoutFilter@72240290, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@11d422fd, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1f1ffc18, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5b1f0f26, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@480994d3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@534d0cfa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42e4431, org.springframework.security.web.session.SessionManagementFilter@52b30dcd, org.springframework.security.web.access.ExceptionTranslationFilter@69cb134, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17e6d07b]
+Started ProductServiceImplTest in 14.432 seconds (JVM running for 17.781)
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.web.context.support.GenericWebApplicationContext@4b629f13: startup date [Tue Mar 27 09:15:51 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting ProductServiceImplTest on DL with PID 944 (started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6986852: startup date [Tue Mar 27 09:17:24 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67503adf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@6986852: startup date [Tue Mar 27 09:17:24 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.web.context.support.GenericWebApplicationContext@6986852: startup date [Tue Mar 27 09:17:24 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+
+
+Using generated security password: f56485d3-7d1a-4b97-a4e8-725bbd804ef0
+
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45571cfc, org.springframework.security.web.context.SecurityContextPersistenceFilter@1657b017, org.springframework.security.web.header.HeaderWriterFilter@3df77dfa, org.springframework.security.web.csrf.CsrfFilter@d62472f, org.springframework.security.web.authentication.logout.LogoutFilter@793cef95, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1b791dca, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@15d65fcf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@505f45cc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44864536, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1377b1a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@faec277, org.springframework.security.web.session.SessionManagementFilter@63187d63, org.springframework.security.web.access.ExceptionTranslationFilter@3dde5f38, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2fc7fa6e]
+Started ProductServiceImplTest in 14.277 seconds (JVM running for 16.816)
+HHH000397: Using ASTQueryTranslatorFactory
+Closing org.springframework.web.context.support.GenericWebApplicationContext@6986852: startup date [Tue Mar 27 09:17:24 CST 2018]; root of context hierarchy
+Closing JPA EntityManagerFactory for persistence unit 'default'
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Starting SellApplication on DL with PID 4632 (F:\06_workshop\0326\sell\target\classes started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@477b4cdf: startup date [Tue Mar 27 09:58:37 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2e69a0c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.28
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\Shine\product\11.2.0\dbhome_1\bin;D:\Program Files\R\Rtools\bin;D:\Program Files\R\Rtools\mingw_32\bin;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\CUPTI\libx64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\MongoDB\Server\3.4\bin;E:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;E:\Program Files (x86)\sbt\bin;D:\Program Files\Java\jre7\bin;E:\Program Files\Java\jdk1.7.0_67\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Program Files (x86)\Pandoc\;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\Program Files\nodejs\;E:\Program Files (x86)\scala\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Shine\Anaconda3;C:\Users\Shine\Anaconda3\Library\mingw-w64\bin;C:\Users\Shine\Anaconda3\Library\usr\bin;C:\Users\Shine\Anaconda3\Library\bin;C:\Users\Shine\Anaconda3\Scripts;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\Downloads\cmder_mini;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;E:\MongoDB\Server\3.4\bin;E:\用户目录\下载\chromedriver_win32;C:\Us;rs\Shine\Downloads\phantomjs-2.1.1-windows\bin;C:\Users\Shine\Anaconda3\envs\spider;C:\Users\Shine\Anaconda3\envs\spider\Lib\site-packages;D:\Program Files (x86)\Pandoc\;E:\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\AppData\Roaming\npm;E:\Program Files\Java\jdk1.8.0_131\lib;F:\06_workshop\maven\apache-maven-3.5.3\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2608 ms
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Mapping filter: 'springSecurityFilterChain' to: [/*]
+Servlet dispatcherServlet mapped to [/]
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@477b4cdf: startup date [Tue Mar 27 09:58:37 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.readailib.sell.VO.ResultVO com.readailib.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@477b4cdf: startup date [Tue Mar 27 09:58:37 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+
+
+Using generated security password: a3c96063-ba9d-4a49-ab8e-5d4b8e04a21d
+
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48d739f, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b2fdffc, org.springframework.security.web.header.HeaderWriterFilter@22f02996, org.springframework.security.web.csrf.CsrfFilter@7c588adc, org.springframework.security.web.authentication.logout.LogoutFilter@615db358, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2313db84, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@515ab3f2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6cbb7a7d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d194314, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62cbc478, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51e7589f, org.springframework.security.web.session.SessionManagementFilter@42c0a16e, org.springframework.security.web.access.ExceptionTranslationFilter@1bd8afc8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6de43bc1]
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 8.149 seconds (JVM running for 10.425)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+Starting SellApplication on DL with PID 632 (F:\06_workshop\0326\sell\target\classes started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22fcf7ab: startup date [Tue Mar 27 10:00:49 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$74f48dbf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.28
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\Shine\product\11.2.0\dbhome_1\bin;D:\Program Files\R\Rtools\bin;D:\Program Files\R\Rtools\mingw_32\bin;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\CUPTI\libx64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\MongoDB\Server\3.4\bin;E:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;E:\Program Files (x86)\sbt\bin;D:\Program Files\Java\jre7\bin;E:\Program Files\Java\jdk1.7.0_67\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Program Files (x86)\Pandoc\;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\Program Files\nodejs\;E:\Program Files (x86)\scala\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Shine\Anaconda3;C:\Users\Shine\Anaconda3\Library\mingw-w64\bin;C:\Users\Shine\Anaconda3\Library\usr\bin;C:\Users\Shine\Anaconda3\Library\bin;C:\Users\Shine\Anaconda3\Scripts;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\Downloads\cmder_mini;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;E:\MongoDB\Server\3.4\bin;E:\用户目录\下载\chromedriver_win32;C:\Us;rs\Shine\Downloads\phantomjs-2.1.1-windows\bin;C:\Users\Shine\Anaconda3\envs\spider;C:\Users\Shine\Anaconda3\envs\spider\Lib\site-packages;D:\Program Files (x86)\Pandoc\;E:\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\AppData\Roaming\npm;E:\Program Files\Java\jdk1.8.0_131\lib;F:\06_workshop\maven\apache-maven-3.5.3\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 5307 ms
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+Mapping filter: 'springSecurityFilterChain' to: [/*]
+Servlet dispatcherServlet mapped to [/]
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22fcf7ab: startup date [Tue Mar 27 10:00:49 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.readailib.sell.VO.ResultVO com.readailib.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22fcf7ab: startup date [Tue Mar 27 10:00:49 CST 2018]; root of context hierarchy] and template loader path [classpath:/templates/]
+ClassTemplateLoader for Spring macros added to FreeMarker configuration
+Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+
+
+Using generated security password: 58f5e6c4-3386-4f04-8b08-45bda36cabd4
+
+Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@212fafd1, org.springframework.security.web.context.SecurityContextPersistenceFilter@74f280bd, org.springframework.security.web.header.HeaderWriterFilter@41aebbb4, org.springframework.security.web.csrf.CsrfFilter@6222391a, org.springframework.security.web.authentication.logout.LogoutFilter@3caee3a8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79df80a4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6d7ad0f5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7d59e968, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@34279b8a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@bbb6f0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@448462f0, org.springframework.security.web.session.SessionManagementFilter@5a592c70, org.springframework.security.web.access.ExceptionTranslationFilter@42c12b3e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6075b369]
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 13.986 seconds (JVM running for 16.143)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+Starting SellApplication on DL with PID 5392 (F:\06_workshop\0326\sell\target\classes started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@217ed35e: startup date [Tue Mar 27 10:04:25 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$39368a96] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.28
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\Shine\product\11.2.0\dbhome_1\bin;D:\Program Files\R\Rtools\bin;D:\Program Files\R\Rtools\mingw_32\bin;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\CUPTI\libx64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\MongoDB\Server\3.4\bin;E:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;E:\Program Files (x86)\sbt\bin;D:\Program Files\Java\jre7\bin;E:\Program Files\Java\jdk1.7.0_67\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Program Files (x86)\Pandoc\;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\Program Files\nodejs\;E:\Program Files (x86)\scala\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Shine\Anaconda3;C:\Users\Shine\Anaconda3\Library\mingw-w64\bin;C:\Users\Shine\Anaconda3\Library\usr\bin;C:\Users\Shine\Anaconda3\Library\bin;C:\Users\Shine\Anaconda3\Scripts;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\Downloads\cmder_mini;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;E:\MongoDB\Server\3.4\bin;E:\用户目录\下载\chromedriver_win32;C:\Us;rs\Shine\Downloads\phantomjs-2.1.1-windows\bin;C:\Users\Shine\Anaconda3\envs\spider;C:\Users\Shine\Anaconda3\envs\spider\Lib\site-packages;D:\Program Files (x86)\Pandoc\;E:\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\AppData\Roaming\npm;E:\Program Files\Java\jdk1.8.0_131\lib;F:\06_workshop\maven\apache-maven-3.5.3\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1996 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@217ed35e: startup date [Tue Mar 27 10:04:25 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.readailib.sell.VO.ResultVO com.readailib.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 9.796 seconds (JVM running for 11.631)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+Starting SellApplication on DL with PID 7564 (F:\06_workshop\0326\sell\target\classes started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40005471: startup date [Tue Mar 27 10:07:02 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7eb4a134] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.28
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\Shine\product\11.2.0\dbhome_1\bin;D:\Program Files\R\Rtools\bin;D:\Program Files\R\Rtools\mingw_32\bin;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\CUPTI\libx64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\MongoDB\Server\3.4\bin;E:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;E:\Program Files (x86)\sbt\bin;D:\Program Files\Java\jre7\bin;E:\Program Files\Java\jdk1.7.0_67\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Program Files (x86)\Pandoc\;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\Program Files\nodejs\;E:\Program Files (x86)\scala\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Shine\Anaconda3;C:\Users\Shine\Anaconda3\Library\mingw-w64\bin;C:\Users\Shine\Anaconda3\Library\usr\bin;C:\Users\Shine\Anaconda3\Library\bin;C:\Users\Shine\Anaconda3\Scripts;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\Downloads\cmder_mini;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;E:\MongoDB\Server\3.4\bin;E:\用户目录\下载\chromedriver_win32;C:\Us;rs\Shine\Downloads\phantomjs-2.1.1-windows\bin;C:\Users\Shine\Anaconda3\envs\spider;C:\Users\Shine\Anaconda3\envs\spider\Lib\site-packages;D:\Program Files (x86)\Pandoc\;E:\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\AppData\Roaming\npm;E:\Program Files\Java\jdk1.8.0_131\lib;F:\06_workshop\maven\apache-maven-3.5.3\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2307 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40005471: startup date [Tue Mar 27 10:07:02 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.readailib.sell.VO.ResultVO com.readailib.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 7.526 seconds (JVM running for 9.252)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+Starting SellApplication on DL with PID 14408 (F:\06_workshop\0326\sell\target\classes started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@41a2befb: startup date [Tue Mar 27 10:25:22 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$57928285] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.28
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\Shine\product\11.2.0\dbhome_1\bin;D:\Program Files\R\Rtools\bin;D:\Program Files\R\Rtools\mingw_32\bin;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\CUPTI\libx64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\MongoDB\Server\3.4\bin;E:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;E:\Program Files (x86)\sbt\bin;D:\Program Files\Java\jre7\bin;E:\Program Files\Java\jdk1.7.0_67\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Program Files (x86)\Pandoc\;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\Program Files\nodejs\;E:\Program Files (x86)\scala\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Shine\Anaconda3;C:\Users\Shine\Anaconda3\Library\mingw-w64\bin;C:\Users\Shine\Anaconda3\Library\usr\bin;C:\Users\Shine\Anaconda3\Library\bin;C:\Users\Shine\Anaconda3\Scripts;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\Downloads\cmder_mini;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;E:\MongoDB\Server\3.4\bin;E:\用户目录\下载\chromedriver_win32;C:\Us;rs\Shine\Downloads\phantomjs-2.1.1-windows\bin;C:\Users\Shine\Anaconda3\envs\spider;C:\Users\Shine\Anaconda3\envs\spider\Lib\site-packages;D:\Program Files (x86)\Pandoc\;E:\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\AppData\Roaming\npm;E:\Program Files\Java\jdk1.8.0_131\lib;F:\06_workshop\maven\apache-maven-3.5.3\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2168 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@41a2befb: startup date [Tue Mar 27 10:25:22 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.readailib.sell.VO.ResultVO com.readailib.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 6.644 seconds (JVM running for 8.147)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+Starting SellApplication on DL with PID 12404 (F:\06_workshop\0326\sell\target\classes started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@139982de: startup date [Tue Mar 27 10:58:33 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d6cff22b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.28
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\Shine\product\11.2.0\dbhome_1\bin;D:\Program Files\R\Rtools\bin;D:\Program Files\R\Rtools\mingw_32\bin;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\CUPTI\libx64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\MongoDB\Server\3.4\bin;E:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;E:\Program Files (x86)\sbt\bin;D:\Program Files\Java\jre7\bin;E:\Program Files\Java\jdk1.7.0_67\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Program Files (x86)\Pandoc\;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\Program Files\nodejs\;E:\Program Files (x86)\scala\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Shine\Anaconda3;C:\Users\Shine\Anaconda3\Library\mingw-w64\bin;C:\Users\Shine\Anaconda3\Library\usr\bin;C:\Users\Shine\Anaconda3\Library\bin;C:\Users\Shine\Anaconda3\Scripts;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\Downloads\cmder_mini;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;E:\MongoDB\Server\3.4\bin;E:\用户目录\下载\chromedriver_win32;C:\Us;rs\Shine\Downloads\phantomjs-2.1.1-windows\bin;C:\Users\Shine\Anaconda3\envs\spider;C:\Users\Shine\Anaconda3\envs\spider\Lib\site-packages;D:\Program Files (x86)\Pandoc\;E:\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\AppData\Roaming\npm;E:\Program Files\Java\jdk1.8.0_131\lib;F:\06_workshop\maven\apache-maven-3.5.3\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2062 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@139982de: startup date [Tue Mar 27 10:58:33 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.readailib.sell.VO.ResultVO com.readailib.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 6.908 seconds (JVM running for 8.764)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on DL with PID 9996 (F:\06_workshop\0326\sell\target\classes started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@70325e14: startup date [Tue Mar 27 10:59:26 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1a5c3a38] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.28
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\Shine\product\11.2.0\dbhome_1\bin;D:\Program Files\R\Rtools\bin;D:\Program Files\R\Rtools\mingw_32\bin;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\CUPTI\libx64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\MongoDB\Server\3.4\bin;E:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;E:\Program Files (x86)\sbt\bin;D:\Program Files\Java\jre7\bin;E:\Program Files\Java\jdk1.7.0_67\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Program Files (x86)\Pandoc\;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\Program Files\nodejs\;E:\Program Files (x86)\scala\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Shine\Anaconda3;C:\Users\Shine\Anaconda3\Library\mingw-w64\bin;C:\Users\Shine\Anaconda3\Library\usr\bin;C:\Users\Shine\Anaconda3\Library\bin;C:\Users\Shine\Anaconda3\Scripts;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\Downloads\cmder_mini;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;E:\MongoDB\Server\3.4\bin;E:\用户目录\下载\chromedriver_win32;C:\Us;rs\Shine\Downloads\phantomjs-2.1.1-windows\bin;C:\Users\Shine\Anaconda3\envs\spider;C:\Users\Shine\Anaconda3\envs\spider\Lib\site-packages;D:\Program Files (x86)\Pandoc\;E:\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\AppData\Roaming\npm;E:\Program Files\Java\jdk1.8.0_131\lib;F:\06_workshop\maven\apache-maven-3.5.3\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2352 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@70325e14: startup date [Tue Mar 27 10:59:26 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.readailib.sell.VO.ResultVO com.readailib.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 6.848 seconds (JVM running for 8.435)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+HHH000397: Using ASTQueryTranslatorFactory
