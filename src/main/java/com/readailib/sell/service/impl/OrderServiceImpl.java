@@ -1,5 +1,6 @@
 package com.readailib.sell.service.impl;
 
+import com.readailib.sell.converter.OrderMaster2OrderDTO;
 import com.readailib.sell.dataobject.OrderDetail;
 import com.readailib.sell.dataobject.OrderMaster;
 import com.readailib.sell.dataobject.ProductInfo;
@@ -17,10 +18,7 @@ import com.readailib.sell.utils.KeyUtil;
 import org.hibernate.criterion.Order;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.*;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -50,6 +48,9 @@ public class OrderServiceImpl implements OrderService {
 
     @Autowired
     private ProductService productService;
+
+    @Autowired
+    private OrderService orderService;
 
     @Autowired
     private OrderDetailRepository orderDetailRepository;
@@ -100,12 +101,33 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public OrderDTO findOne(String orderId) {
-        return null;
+        OrderMaster orderMaster = new OrderMaster();
+        orderMaster.setOrderId(orderId);
+        Example<OrderMaster> example = Example.of(orderMaster);
+        OrderMaster orderMaster1 = repository.findOne(example).get();
+        if( orderMaster1 == null){
+            throw  new SellException(ResultEnum.ORDER_NOT_EXIST);
+        }
+
+        List<OrderDetail> orderDetailList = orderDetailRepository.findByOrderId(orderId);
+        if (orderDetailList == null){
+            throw new SellException(ResultEnum.ORDERDETAIL_NOT_EXIST);
+        }
+
+        OrderDTO orderDTO1 = new OrderDTO();
+        BeanUtils.copyProperties(orderMaster1, orderDTO1);
+        orderDTO1.setOrderDetailList(orderDetailList);
+        return orderDTO1;
+
     }
 
     @Override
     public Page<OrderDTO> findList(String buyerOpenid, Pageable pageable) {
-        return null;
+        Page<OrderMaster> orderMasterPage = orderMasterRepository.findByBuyerOpenid(buyerOpenid, pageable);
+
+        List<OrderDTO> orderDTOList = OrderMaster2OrderDTO.convert(orderMasterPage.getContent());
+        Page<OrderDTO> orderDTOPage = new PageImpl<OrderDTO>(orderDTOList,pageable, orderDTOList.size());
+        return orderDTOPage;
     }
 
     @Override
