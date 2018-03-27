@@ -6,8 +6,10 @@ import org.hibernate.annotations.DynamicUpdate;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 /*
  * @program: sell
@@ -41,6 +43,8 @@ public class OrderMaster {
     private Date createTime;
     /*更新时间*/
     private Date updateTime;
+
+
 
     public OrderMaster() {
         super();

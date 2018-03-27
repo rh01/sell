@@ -1,11 +1,21 @@
 package com.readailib.sell.service.impl;
 
+import com.readailib.sell.dataobject.OrderDetail;
 import com.readailib.sell.dataobject.OrderMaster;
+import com.readailib.sell.dataobject.ProductInfo;
+import com.readailib.sell.dto.CartDTO;
+import com.readailib.sell.dto.OrderDTO;
 import com.readailib.sell.enums.OrderStatusEnum;
 import com.readailib.sell.enums.PayStatusEnum;
+import com.readailib.sell.enums.ResultEnum;
+import com.readailib.sell.exception.SellException;
+import com.readailib.sell.repository.OrderDetailRepository;
 import com.readailib.sell.repository.OrderMasterRepository;
 import com.readailib.sell.service.OrderService;
+import com.readailib.sell.service.ProductService;
+import com.readailib.sell.utils.KeyUtil;
 import org.hibernate.criterion.Order;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
@@ -13,7 +23,13 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import static org.springframework.data.domain.PageRequest.of;
 
@@ -29,39 +45,81 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     private OrderMasterRepository repository;
 
+    @Autowired
+    private OrderMasterRepository orderMasterRepository;
+
+    @Autowired
+    private ProductService productService;
+
+    @Autowired
+    private OrderDetailRepository orderDetailRepository;
+
 
     @Override
-    public OrderMaster findOne(String orderId) {
-        OrderMaster orderMaster = new OrderMaster();
-        orderMaster.setOrderId(orderId);
-        Example<OrderMaster> example = Example.of(orderMaster);
-        OrderMaster result = repository.findOne(example).get();
-        return result;
+    public OrderDTO create(OrderDTO orderMaster) {
+        String orderId = KeyUtil.genUniqueKey();
+
+        BigDecimal orderAmount = new BigDecimal(BigInteger.ZERO);
+        //1. 查询商品（数量，价格）
+        for (OrderDetail detail : orderMaster.getOrderDetailList()) {
+            ProductInfo productInfo = productService.findOne(detail.getProductId());
+            if (productInfo == null) {
+                throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
+            }
+            //2. 计算总价
+            orderAmount = productInfo.getProductPrice()
+                    .multiply(new BigDecimal(detail.getProductQuantity()))
+                    .add(orderAmount);
+            //3.订单详情入库.
+            detail.setOrderId(orderId);
+            detail.setDetailId(KeyUtil.genUniqueKey());
+            /*将productInfo的属性拷贝到detail*/
+            BeanUtils.copyProperties(productInfo, detail);
+            orderDetailRepository.save(detail);
+        }
+        //3. 写入到订单数据库（orderMaster和orderDetail）
+
+        OrderMaster orderMaster1 = new OrderMaster();
+        BeanUtils.copyProperties(orderMaster, orderMaster1);
+        orderMaster1.setOrderId(orderId);
+        orderMaster1.setOrderAmount(orderAmount);
+
+
+        orderMasterRepository.save(orderMaster1);
+
+        //4. 口库存
+        List<CartDTO> cartDTOList = orderMaster.getOrderDetailList()
+                .stream()
+                .map(e -> new CartDTO(e.getProductId(), e.getProductQuantity()))
+                .collect(Collectors.toList());
+        productService.decreaseStock(cartDTOList);
+
+
+        return orderMaster;
     }
 
     @Override
-    public Page<OrderMaster> findAll(Pageable pageable) {
-        //PageRequest pageRequest = of(0,2);
-        return repository.findAll(pageable);
+    public OrderDTO findOne(String orderId) {
+        return null;
     }
 
     @Override
-    public List<OrderMaster> findOrderUpAll() {
-        return repository.findByOrderStatus(OrderStatusEnum.FINISH.getCode());
+    public Page<OrderDTO> findList(String buyerOpenid, Pageable pageable) {
+        return null;
     }
 
     @Override
-    public List<OrderMaster> findPayUpAll() {
-        return repository.findByPayStatus(PayStatusEnum.SUCCESS.getCode());
+    public OrderDTO cancel(OrderDTO orderDTO) {
+        return null;
     }
 
     @Override
-    public OrderMaster save(OrderMaster orderMaster) {
-        return repository.save(orderMaster);
+    public OrderDTO finish(OrderDTO orderDTO) {
+        return null;
     }
 
     @Override
-    public List<OrderMaster> findByBuyerName(String buyerName) {
-        return repository.findByBuyerName(buyerName);
+    public OrderDTO paid(OrderDTO orderDTO) {
+        return null;
     }
 }

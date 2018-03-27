@@ -24,6 +24,9 @@ public class OrderDetail {
     /*订单id*/
     private String orderId;
 
+    /*商品id*/
+    private String productId;
+
     /*商品名称*/
     private String productName;
 
@@ -46,9 +49,10 @@ public class OrderDetail {
         super();
     }
 
-    public OrderDetail(String detailId, String orderId, String productName, BigDecimal productPrice, Integer productQuantity, String productIcon, Date createTime, Date updateTime) {
+    public OrderDetail(String detailId, String orderId, String productId, String productName, BigDecimal productPrice, Integer productQuantity, String productIcon, Date createTime, Date updateTime) {
         this.detailId = detailId;
         this.orderId = orderId;
+        this.productId = productId;
         this.productName = productName;
         this.productPrice = productPrice;
         this.productQuantity = productQuantity;

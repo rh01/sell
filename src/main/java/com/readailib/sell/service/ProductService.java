@@ -1,6 +1,7 @@
 package com.readailib.sell.service;
 
 import com.readailib.sell.dataobject.ProductInfo;
+import com.readailib.sell.dto.CartDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -33,7 +34,9 @@ public interface ProductService {
     List<ProductInfo> findUpAll();
 
     /*家库存*/
+    void increaseStock(List<CartDTO> cartDTOList);
 
     /*减库存*/
+    void decreaseStock(List<CartDTO> cartDTOList);
 
 }
