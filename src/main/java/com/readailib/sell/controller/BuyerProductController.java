@@ -7,6 +7,7 @@ import com.readailib.sell.dataobject.ProductCategory;
 import com.readailib.sell.dataobject.ProductInfo;
 import com.readailib.sell.service.CategoryService;
 import com.readailib.sell.service.ProductService;
+import com.readailib.sell.utils.ResultVOUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -90,13 +91,14 @@ public class BuyerProductController {
         productVO.setCategoryName("男生最爱");*/
         //productVO.setProductInfoVOList(Arrays.asList(productInfoVO));
 
-        resultVO.setCode(0);
+        /*resultVO.setCode(0);
         resultVO.setMsg("成功");
-        resultVO.setData(productVOList );
+        resultVO.setData(productVOList );*/
         //resultVO.setData(productVO);
 
 
-        return resultVO;
+
+        return ResultVOUtil.success(productVOList);
     }
 
 
