@@ -34,11 +34,15 @@ public class OrderServiceImplTest {
         /*购物车*/
         List<OrderDetail> orderDetailList = new ArrayList<>();
         OrderDetail orderDetail = new OrderDetail();
-
         orderDetail.setProductQuantity(1);
         orderDetail.setProductId("12");
 
+        OrderDetail od2 = new OrderDetail();
+        od2.setProductQuantity(1);
+        od2.setProductId("13");
+
         orderDetailList.add(orderDetail);
+        orderDetailList.add(od2);
 
         orderDTO.setOrderDetailList(orderDetailList);
 
