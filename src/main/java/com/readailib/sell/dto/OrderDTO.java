@@ -1,6 +1,8 @@
 package com.readailib.sell.dto;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.readailib.sell.dataobject.OrderDetail;
+import com.readailib.sell.utils.serializer.Date2LongSerializer;
 import lombok.Data;
 
 import javax.persistence.Id;
@@ -34,8 +36,10 @@ public class OrderDTO {
     /*购买的状态，默认0未支付*/
     private Integer payStatus = 0;
     /*创建时间*/
+    @JsonSerialize(using = Date2LongSerializer.class)
     private Date createTime;
     /*更新时间*/
+    @JsonSerialize(using = Date2LongSerializer.class)
     private Date updateTime;
 
     List<OrderDetail> orderDetailList;

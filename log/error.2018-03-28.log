@@ -1274,3 +1274,200 @@ Initializing Spring FrameworkServlet 'dispatcherServlet'
 FrameworkServlet 'dispatcherServlet': initialization started
 FrameworkServlet 'dispatcherServlet': initialization completed in 56 ms
 HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on DL with PID 892 (F:\06_workshop\0326\sell\target\classes started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@77c2494c: startup date [Wed Mar 28 10:49:49 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1e4d1dcd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.28
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\Shine\product\11.2.0\dbhome_1\bin;D:\Program Files\R\Rtools\bin;D:\Program Files\R\Rtools\mingw_32\bin;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\CUPTI\libx64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\MongoDB\Server\3.4\bin;E:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;E:\Program Files (x86)\sbt\bin;D:\Program Files\Java\jre7\bin;E:\Program Files\Java\jdk1.7.0_67\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Program Files (x86)\Pandoc\;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\Program Files\nodejs\;E:\Program Files (x86)\scala\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Shine\Anaconda3;C:\Users\Shine\Anaconda3\Library\mingw-w64\bin;C:\Users\Shine\Anaconda3\Library\usr\bin;C:\Users\Shine\Anaconda3\Library\bin;C:\Users\Shine\Anaconda3\Scripts;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\Downloads\cmder_mini;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;E:\MongoDB\Server\3.4\bin;E:\用户目录\下载\chromedriver_win32;C:\Us;rs\Shine\Downloads\phantomjs-2.1.1-windows\bin;C:\Users\Shine\Anaconda3\envs\spider;C:\Users\Shine\Anaconda3\envs\spider\Lib\site-packages;D:\Program Files (x86)\Pandoc\;E:\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\AppData\Roaming\npm;E:\Program Files\Java\jdk1.8.0_131\lib;F:\06_workshop\maven\apache-maven-3.5.3\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2561 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@77c2494c: startup date [Wed Mar 28 10:49:49 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.readailib.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.readailib.sell.controller.BuyerOrderController.create(com.readailib.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.readailib.sell.VO.ResultVO<java.util.List<com.readailib.sell.dto.OrderDTO>> com.readailib.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.readailib.sell.VO.ResultVO com.readailib.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 7.491 seconds (JVM running for 9.248)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 50 ms
+Request method 'GET' not supported
+HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on DL with PID 10028 (F:\06_workshop\0326\sell\target\classes started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d20d0b: startup date [Wed Mar 28 10:59:11 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e36e8494] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.28
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\Shine\product\11.2.0\dbhome_1\bin;D:\Program Files\R\Rtools\bin;D:\Program Files\R\Rtools\mingw_32\bin;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\CUPTI\libx64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\MongoDB\Server\3.4\bin;E:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;E:\Program Files (x86)\sbt\bin;D:\Program Files\Java\jre7\bin;E:\Program Files\Java\jdk1.7.0_67\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Program Files (x86)\Pandoc\;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\Program Files\nodejs\;E:\Program Files (x86)\scala\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Shine\Anaconda3;C:\Users\Shine\Anaconda3\Library\mingw-w64\bin;C:\Users\Shine\Anaconda3\Library\usr\bin;C:\Users\Shine\Anaconda3\Library\bin;C:\Users\Shine\Anaconda3\Scripts;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\Downloads\cmder_mini;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;E:\MongoDB\Server\3.4\bin;E:\用户目录\下载\chromedriver_win32;C:\Us;rs\Shine\Downloads\phantomjs-2.1.1-windows\bin;C:\Users\Shine\Anaconda3\envs\spider;C:\Users\Shine\Anaconda3\envs\spider\Lib\site-packages;D:\Program Files (x86)\Pandoc\;E:\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\AppData\Roaming\npm;E:\Program Files\Java\jdk1.8.0_131\lib;F:\06_workshop\maven\apache-maven-3.5.3\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2100 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d20d0b: startup date [Wed Mar 28 10:59:11 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.readailib.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.readailib.sell.controller.BuyerOrderController.create(com.readailib.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.readailib.sell.VO.ResultVO<java.util.List<com.readailib.sell.dto.OrderDTO>> com.readailib.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.readailib.sell.VO.ResultVO com.readailib.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 7.037 seconds (JVM running for 8.685)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on DL with PID 8200 (F:\06_workshop\0326\sell\target\classes started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@217ed35e: startup date [Wed Mar 28 11:00:42 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$30248d57] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.28
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\Shine\product\11.2.0\dbhome_1\bin;D:\Program Files\R\Rtools\bin;D:\Program Files\R\Rtools\mingw_32\bin;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\CUPTI\libx64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\MongoDB\Server\3.4\bin;E:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;E:\Program Files (x86)\sbt\bin;D:\Program Files\Java\jre7\bin;E:\Program Files\Java\jdk1.7.0_67\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Program Files (x86)\Pandoc\;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\Program Files\nodejs\;E:\Program Files (x86)\scala\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Shine\Anaconda3;C:\Users\Shine\Anaconda3\Library\mingw-w64\bin;C:\Users\Shine\Anaconda3\Library\usr\bin;C:\Users\Shine\Anaconda3\Library\bin;C:\Users\Shine\Anaconda3\Scripts;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\Downloads\cmder_mini;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;E:\MongoDB\Server\3.4\bin;E:\用户目录\下载\chromedriver_win32;C:\Us;rs\Shine\Downloads\phantomjs-2.1.1-windows\bin;C:\Users\Shine\Anaconda3\envs\spider;C:\Users\Shine\Anaconda3\envs\spider\Lib\site-packages;D:\Program Files (x86)\Pandoc\;E:\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\AppData\Roaming\npm;E:\Program Files\Java\jdk1.8.0_131\lib;F:\06_workshop\maven\apache-maven-3.5.3\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1894 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@217ed35e: startup date [Wed Mar 28 11:00:42 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.readailib.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.readailib.sell.controller.BuyerOrderController.create(com.readailib.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.readailib.sell.VO.ResultVO<java.util.List<com.readailib.sell.dto.OrderDTO>> com.readailib.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.readailib.sell.VO.ResultVO com.readailib.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 6.817 seconds (JVM running for 8.939)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+HHH000397: Using ASTQueryTranslatorFactory
+Starting SellApplication on DL with PID 1464 (F:\06_workshop\0326\sell\target\classes started by Shine in F:\06_workshop\0326\sell)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@131ef10: startup date [Wed Mar 28 11:01:37 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b5d38628] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.28
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_73\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\app\Shine\product\11.2.0\dbhome_1\bin;D:\Program Files\R\Rtools\bin;D:\Program Files\R\Rtools\mingw_32\bin;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\extras\CUPTI\libx64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;E:\MongoDB\Server\3.4\bin;E:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\GtkSharp\2.12\bin;E:\Program Files (x86)\sbt\bin;D:\Program Files\Java\jre7\bin;E:\Program Files\Java\jdk1.7.0_67\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\Program Files (x86)\Pandoc\;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\Program Files\nodejs\;E:\Program Files (x86)\scala\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Shine\Anaconda3;C:\Users\Shine\Anaconda3\Library\mingw-w64\bin;C:\Users\Shine\Anaconda3\Library\usr\bin;C:\Users\Shine\Anaconda3\Library\bin;C:\Users\Shine\Anaconda3\Scripts;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\Downloads\cmder_mini;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin;E:\MongoDB\Server\3.4\bin;E:\用户目录\下载\chromedriver_win32;C:\Us;rs\Shine\Downloads\phantomjs-2.1.1-windows\bin;C:\Users\Shine\Anaconda3\envs\spider;C:\Users\Shine\Anaconda3\envs\spider\Lib\site-packages;D:\Program Files (x86)\Pandoc\;E:\MiKTeX 2.9\miktex\bin\x64\;C:\Users\Shine\AppData\Local\Microsoft\WindowsApps;C:\Users\Shine\AppData\Roaming\npm;E:\Program Files\Java\jdk1.8.0_131\lib;F:\06_workshop\maven\apache-maven-3.5.3\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2301 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+Building JPA container EntityManagerFactory for persistence unit 'default'
+HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+HHH000412: Hibernate Core {5.2.14.Final}
+HHH000206: hibernate.properties not found
+HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Initialized JPA EntityManagerFactory for persistence unit 'default'
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@131ef10: startup date [Wed Mar 28 11:01:37 CST 2018]; root of context hierarchy
+spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Mapped "{[/buyer/order/create],methods=[POST]}" onto public com.readailib.sell.VO.ResultVO<java.util.Map<java.lang.String, java.lang.String>> com.readailib.sell.controller.BuyerOrderController.create(com.readailib.sell.form.OrderForm,org.springframework.validation.BindingResult)
+Mapped "{[/buyer/order/list],methods=[GET]}" onto public com.readailib.sell.VO.ResultVO<java.util.List<com.readailib.sell.dto.OrderDTO>> com.readailib.sell.controller.BuyerOrderController.list(java.lang.String,java.lang.Integer,java.lang.Integer)
+Mapped "{[/buyer/product/list],methods=[GET]}" onto public com.readailib.sell.VO.ResultVO com.readailib.sell.controller.BuyerProductController.list()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path '/sell'
+Started SellApplication in 7.424 seconds (JVM running for 9.066)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+HHH000397: Using ASTQueryTranslatorFactory
