@@ -1,13 +1,19 @@
 package com.readailib.sell.service.impl;
 
+import com.readailib.sell.converter.OrderMaster2OrderDTO;
 import com.readailib.sell.dataobject.OrderDetail;
+import com.readailib.sell.dataobject.OrderMaster;
 import com.readailib.sell.dto.OrderDTO;
+import com.readailib.sell.enums.OrderStatusEnum;
+import com.readailib.sell.enums.PayStatusEnum;
+import com.readailib.sell.repository.OrderMasterRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -24,6 +30,9 @@ public class OrderServiceImplTest {
 
     @Autowired
     private OrderServiceImpl orderService;
+
+    @Autowired
+    private OrderMasterRepository repository;
 
     private String OPENID = "110110";
     private String ORDERID = "1522153783223780734";
@@ -65,27 +74,35 @@ public class OrderServiceImplTest {
 
     @Test
     public void findList() {
-        PageRequest request = PageRequest.of(0,2);
-        Page<OrderDTO> orderDTOPage = orderService.findList(OPENID,request);
+        PageRequest request = PageRequest.of(0, 2);
+        Page<OrderDTO> orderDTOPage = orderService.findList(OPENID, request);
         Assert.assertNotEquals(0, orderDTOPage.getTotalElements());
     }
 
     @Test
     public void cancel() {
-        // 判断订单状态
-
-        // 修改订单状态
-
-        // 返还库存
-
-        
+        OrderDTO orderDTO = orderService.findOne(ORDERID);
+        OrderDTO result = orderService.cancel(orderDTO);
+        Assert.assertEquals(OrderStatusEnum.CANCEL.getCode(), result.getOrderStatus());
     }
 
     @Test
     public void finish() {
+        OrderDTO orderDTO = orderService.findOne(ORDERID);
+        OrderDTO result = orderService.finish(orderDTO);
+        Assert.assertEquals(OrderStatusEnum.FINISH.getCode(), result.getOrderStatus());
     }
 
     @Test
     public void paid() {
+        OrderMaster orderMaster = new OrderMaster();
+        orderMaster.setOrderId(ORDERID);
+        Example<OrderMaster> orderMasterExample = Example.of(orderMaster);
+
+
+        OrderMaster orderMaster1 = repository.findOne(orderMasterExample).get();
+        OrderDTO orderDTO = OrderMaster2OrderDTO.convert(orderMaster1);
+        OrderDTO result = orderService.paid(orderDTO);
+        Assert.assertEquals(PayStatusEnum.SUCCESS.getCode(), result.getPayStatus());
     }
 }

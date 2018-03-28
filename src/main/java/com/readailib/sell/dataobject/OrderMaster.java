@@ -36,9 +36,9 @@ public class OrderMaster {
     /*总金额*/
     private BigDecimal orderAmount;
     /*订单状态，默认0为下订单*/
-    private Integer orderStatus = 0;
+    private Integer orderStatus;
     /*购买的状态，默认0未支付*/
-    private Integer payStatus = 0;
+    private Integer payStatus;
     /*创建时间*/
     private Date createTime;
     /*更新时间*/
